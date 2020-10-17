@@ -95,6 +95,7 @@ float fnAngulo(int angulo){
 }
 
 void dispOfenDananCaDefen(){
+    /*En esta funcion se debe de tener presente que el angulo con la mayor trayectoria es 45°*/
 
     int angulo=0;
     float impre=0;
