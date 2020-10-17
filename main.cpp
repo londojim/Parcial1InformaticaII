@@ -9,12 +9,16 @@
 
 using namespace std;
 
+# define M_PI  3.14159265358979323846  /* pi */
 
-int dispOfenDananCaDefen();
+
+void dispOfenDananCaDefen();
+float fnAngulo(int angulo);
 
 int main()
 {
     int opcion = 0;
+
 
     do
     {
@@ -55,7 +59,9 @@ int main()
 
         case        integridad_canon_defensivo      :
             //opcion 1
-            cout<<cos(60);
+
+
+           dispOfenDananCaDefen();
             break;
 
         case integridad_canon_ofensivo:
@@ -82,13 +88,23 @@ int main()
 
     return 0;
 }
+float fnAngulo(int angulo){
+    float radianes = cos((angulo*M_PI)/180);
+
+    return radianes;
+}
+
+void dispOfenDananCaDefen(){
+
+    int angulo=0;
+    float impre=0;
+    cout<<"ingrese el angulo"<<endl;
+    cin>>angulo;
 
 
-int dispOfenDananCaDefen(){
+    impre=fnAngulo(angulo);
 
-
-
-
+    cout<<"El angulo es "<<impre<<endl;
 
 
 }
